@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using HRLeaveManagement.Application.Contracts.Persistence;
+using HRLeaveManagement.Application.ErrorHandling;
+using HRLeaveManagement.Domain.Entities;
 using MediatR;
 
 namespace HRLeaveManagement.Application.Features.HRLeaveType.Commands.DeleteLeaveType
@@ -17,7 +19,7 @@ namespace HRLeaveManagement.Application.Features.HRLeaveType.Commands.DeleteLeav
 
             if(leaveType is null)
             {
-                return default;
+                throw new NotFoundException(nameof(LeaveType), request.Id);
             }
 
             await _repository.DeleteAsync(leaveType);
