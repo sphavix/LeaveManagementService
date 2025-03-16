@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRLeaveManagement.Domain", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRLeaveManagement.Application", "HRLeaveManagement.Application\HRLeaveManagement.Application.csproj", "{B4637798-BC28-4199-B46E-54F81B12917A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRLeaveManagement.Persistence", "HRLeaveManagement.Persistence\HRLeaveManagement.Persistence.csproj", "{52DCA222-8A5A-4B07-925E-70E4F6AA44B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B4637798-BC28-4199-B46E-54F81B12917A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4637798-BC28-4199-B46E-54F81B12917A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4637798-BC28-4199-B46E-54F81B12917A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52DCA222-8A5A-4B07-925E-70E4F6AA44B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52DCA222-8A5A-4B07-925E-70E4F6AA44B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52DCA222-8A5A-4B07-925E-70E4F6AA44B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52DCA222-8A5A-4B07-925E-70E4F6AA44B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{5A067CF0-FE72-4ABE-8B3D-9BC5285EED47} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{A8CFAE34-F14D-425E-8F92-BD1CB359FF44} = {F24F3C60-6A32-49E3-87B0-E982C6FE3E14}
 		{B4637798-BC28-4199-B46E-54F81B12917A} = {F24F3C60-6A32-49E3-87B0-E982C6FE3E14}
+		{52DCA222-8A5A-4B07-925E-70E4F6AA44B3} = {50466742-769B-4E32-B2EE-5C83184E8810}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {64822648-E6A3-4CFB-B586-DD4D47FF3A49}
