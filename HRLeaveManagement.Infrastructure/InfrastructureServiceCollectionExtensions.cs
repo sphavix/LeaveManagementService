@@ -6,11 +6,11 @@ using HRLeaveManagement.Infrastructure.MailingService;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace HRLeaveManagement.Infrastructure.Extensions
+namespace HRLeaveManagement.Infrastructure
 {
     public static class InfrastructureServiceCollectionExtensions
     {
-        public static IServiceCollection AddInfrasstructureServices(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.Configure<EmailSettings>(configuration.GetSection("EmailSettings"));
             services.AddTransient<IEmailService, EmailService>();
