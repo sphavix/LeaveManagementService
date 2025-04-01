@@ -19,9 +19,9 @@ namespace HRLeaveManagement.Application.Features.HRLeaveType.Commands.UpdateLeav
                 .WithMessage("{PropertyName} must not exceed more than 100 characters.");
 
             RuleFor(x => x.DefaultDays)
-                .GreaterThan(100)
+                .LessThan(100)
                 .WithMessage("{PropertyName} cannot be less than 1.")
-                .LessThan(1)
+                .GreaterThan(1)
                 .WithMessage("{PropertyName} cannot be greater than 100.");
 
             RuleFor(x => x)
